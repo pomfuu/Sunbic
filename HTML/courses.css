@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    color: #fff;
+}
+
+@media(max-width:40vw){
+    .header{
+        width: 40vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .title{
+        width: 40vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about{
+        width: 40vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer{
+        width: 40vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/course-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    position: sticky;
+    background: black;
+    height: 4vw;
+    display: flex;
+    padding: 0vw 6vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .current{
+    color: #D94949;
+    text-decoration: none;
+}
+
+.header-link li a:hover{
+    text-decoration: none;
+    color: #D94949;
+    transition: 0.5s ease;
+}
+
+.header-link{
+    text-decoration: none;
+    flex: 1;
+    font-size: 1vw;
+    text-align: right;
+    justify-content: space-between;
+    word-spacing: 3vw;
+    position: sticky;
+}
+
+.header-link ul li{
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+}
+
+/* content */
+
+.course{
+    text-align: center;
+    padding: 5vw;
+}
+
+.course h2{
+    padding-top: 5vw;
+    padding-bottom: 1vw;
+    font-size: 32px;
+}
+
+.fasilitas h2{
+    text-align: center;
+    padding-top: 5vw;
+    padding-bottom: 1vw;
+    font-size: 32px;
+}
+
+.row{
+    text-align: center;
+    padding-top: 2vw;
+    margin: auto;
+    width: 80%;
+    display: flex;
+}
+
+.column{
+    flex-basis: 32%;
+    border-radius: 10%;
+    margin-bottom: 1vw;
+    position: relative;
+    overflow: hidden;
+    margin: 1vw;
+}
+
+.column img{
+    width: 100%;
+}
+
+.row{
+    padding: 0.1vw;
+}
+
+.overlay{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0vw;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: 0.5s;
+}
+
+.overlay:hover{
+    background: rgba(186, 4, 4, 0.326);
+    padding-right: 1vw;
+}
+
+.overlay h2{
+    font-family: 'Quicksand';
+    text-align: center;
+    padding-top: 8vw;
+    font-size: 32px;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.overlay:hover h2{
+    opacity: 1;
+    transition: 0.5s;
+    top: 40%;
+}
+
+.ready{
+    text-align: center;
+    padding-top: 17vw;
+    padding-bottom: 25vw;
+    font-size: 16px;
+}
+
+.ready button{
+    background-color: transparent;
+    border-width: 0.1vw;
+    border-color: #fff;
+    padding: 1vw;
+    padding-left: 4vw;
+    border-radius: 1.5vw;
+    padding-right: 4vw;
+}
+
+.ready button:hover{
+    background-color: #fff;
+    color: black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: #fff;
+    background: black;
+    padding-bottom: 12vh;
+    padding-top: 12vh;
+    padding-left: 6vw; 
+    /* position: absolute;   */
+    width: 100%;
+    bottom: 0px;
+}
+
+.footer{
+    display: flex;
+}
+
+footer h1{
+    font-size: 20px;
+}
+
+footer .logo{
+    flex-grow: 1;
+    flex-basis: 70%;
+}
+
+footer p{
+    font-size: 14px;
+    font-weight: normal;
+}
+
+footer #contact{
+    flex-grow: 1;
+    flex-basis: 60%;
+}
+footer #follow{
+    flex-grow: 1;
+    flex-basis: 60%
+}
+
+.social{
+    flex-grow: 1;
+    flex-basis: 60%;
+    float: left;
+    padding: 0.7vw;
+    height: 1.5vw;
+    width: 1.5vw;
+}

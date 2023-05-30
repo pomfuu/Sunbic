@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    color: #fff;
+}
+
+@media(max-width:40vw){
+    .header{
+        width: 40vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .content{
+        width: 40vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer{
+        width: 40vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/form-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    position: sticky;
+    background: black;
+    height: 4vw;
+    display: flex;
+    padding: 0vw 6vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .current{
+    color: #D94949;
+    text-decoration: none;
+}
+
+.header-link li a:hover{
+    text-decoration: none;
+    color: #D94949;
+    transition: 0.5s ease;
+}
+
+.header-link{
+    text-decoration: none;
+    flex: 1;
+    font-size: 1vw;
+    text-align: right;
+    justify-content: space-between;
+    word-spacing: 3vw;
+    position: sticky;
+}
+
+.header-link ul li{
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+}
+
+/* content */
+.content{
+    padding: 10vw;
+    text-align: center;
+}
+
+form{
+    text-align: left;
+    padding-left: 15vw;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.content h1{
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.content h2{
+    text-align: center;
+    font-size: 16px;
+    color: #D94949;
+    font-weight: bold;
+    margin-bottom: 5vw;
+}
+
+form{
+    padding-left: 15vw;
+    padding-bottom: 25vw;
+}
+
+form .input{
+    color: black;
+    width: 50vw;
+    height: 3vw;
+    border-radius: 0.2vw;
+    border: none;
+}
+
+form .btn{
+    padding: 0.5vw;
+    padding-left: 1.3vw;
+    padding-right: 1.3vw;
+    color: white;
+    font-weight: bolder;
+    background-color: #D94949;
+    border-radius: 0.7vw;
+    font-size: 20px;
+    border: none;
+}
+
+form .btn:hover{
+    background-color: black;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+form .label{
+    font-size: 18px;
+    padding-bottom: 5vw;
+}
+
+form .cek2{
+    font-size: 14px;
+}
+
+
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: #fff;
+    background: black;
+    padding-bottom: 12vh;
+    padding-top: 12vh;
+    padding-left: 6vw; 
+    position: absolute;  
+    width: 100%;
+    bottom: 0px;
+}
+
+.footer{
+    display: flex;
+}
+
+footer h1{
+    font-size: 20px;
+}
+
+footer .logo{
+    flex-grow: 1;
+    flex-basis: 70%;
+}
+
+footer p{
+    font-size: 14px;
+    font-weight: normal;
+}
+
+footer #contact{
+    flex-grow: 1;
+    flex-basis: 60%;
+}
+footer #follow{
+    flex-grow: 1;
+    flex-basis: 60%
+}
+
+.social{
+    flex-grow: 1;
+    flex-basis: 60%;
+    float: left;
+    padding: 0.7vw;
+    height: 1.5vw;
+    width: 1.5vw;
+}
